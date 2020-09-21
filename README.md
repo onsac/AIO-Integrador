@@ -141,7 +141,46 @@ sudo systemctl stop mongod
 sudo systemctl restart mongod
 ```
 
+Criar Usuário
+```sh
+mongo
 
+```sh
+use admin
+db.createUser({user: "admin",pwd: "onSAC030",roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]})
+```
+```sh
+use aio
+db.createUser({user: "aiouser",pwd: "aioUSER030",roles: [{ role: "readWrite", db: "aio" }, { role: "userAdmin", db: "admin" }, { role: "userAdminAnyDatabase", db: "admin" }]})   ```  
+```sh
+exit
+```
+Segurança
+```sh
+vi /etc/mongod.conf
+```  
+```sh
+security:
+  authorization: enabled
+```  
+```sh
+sudo systemctl restart mongod
+```  
+Testar 
+```sh
+mongo
+``` 
+```sh
+use aio 
+db.auth("aiouser", "aioUSER030")
+``` 
+```sh
+use admin
+db.auth("admin", "onSAC030")
+``` 
+```sh
+mongo mongodb://aiouser:aioUSER030@127.0.0.1:27017/aio
+``` 
 
 
 
