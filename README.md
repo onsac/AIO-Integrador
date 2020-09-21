@@ -154,8 +154,7 @@ db.createUser({user: "admin",pwd: "onSAC030",roles: [ { role: "userAdminAnyDatab
 use aio
 ```
 ```sh
-db.createUser({user: "aiouser",pwd: "aioUSER030",roles: [{ role: "readWrite", db: "aio" }, 
-{ role: "userAdmin", db: "admin" }, { role: "userAdminAnyDatabase", db: "admin" }]})
+db.createUser({user: "aiouser",pwd: "aioUSER030",roles: [{ role: "readWrite", db: "aio" }, { role: "userAdmin", db: "admin" }, { role: "userAdminAnyDatabase", db: "admin" }]})
 ```
 ```sh
 exit
