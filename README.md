@@ -20,8 +20,8 @@ A plataforma de integração que facilitará suas operações e otimiza o gerenc
 
 ## Documento estalação AIO Integrador.
 
-- [Check Prerequisites](#check prerequisites)
-- [Criar Usuário](#criar usuário)
+- [Check Prerequisites](#check-prerequisites)
+- [Criar Usuário](#criar-usuário)
 - [What's included](#whats-included)
 - [Bugs and feature requests](#bugs-and-feature-requests)
 - [Documentation](#documentation)
