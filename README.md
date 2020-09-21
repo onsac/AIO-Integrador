@@ -26,11 +26,6 @@ A plataforma de integração que facilitará suas operações e otimiza o gerenc
 - [Instalar e Configurar MONGODB](#instalar-e-configurar-MONGODB)
 - [Instalar nvm](#instalar-nvm)
 - [Deploy AIO Integrador](#deploy-AIO-integrador)
-- [Community](#community)
-- [Versioning](#versioning)
-- [Creators](#creators)
-- [Thanks](#thanks)
-- [Copyright and license](#copyright-and-license)
 
 ## Check Prerequisites
     yum update
