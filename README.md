@@ -24,8 +24,8 @@ A plataforma de integração que facilitará suas operações e otimiza o gerenc
 - [Criar Usuário](#criar-usuário)
 - [Instalar Git](#instalar-git)
 - [Instalar e Configurar MONGODB](#instalar-e-configurar-MONGODB)
-- [Documentation](#documentation)
-- [Contributing](#contributing)
+- [Instalar nvm](#instalar-nvm)
+- [Deploy AIO Integrador](#deploy-AIO-integrador)
 - [Community](#community)
 - [Versioning](#versioning)
 - [Creators](#creators)
@@ -187,11 +187,83 @@ db.auth("admin", "onSAC030")
 mongo mongodb://aiouser:aioUSER030@127.0.0.1:27017/aio
 ```
 
+## Instalar nvm
+```sh
+sudo su - aio
+```
+```sh
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+```
+```sh
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+```
+```sh
+nvm install 11
+```
 
-
-
-
-
+## Deploy AIO Integrador
+```sh
+mkdir /aio/aiop
+```
+```sh
+cd /aio/aiop
+```
+```sh
+git clone https://onsac@bitbucket.org/onsac/aio-setup.git	
+``` 
+```sh
+git clone https://onsac@bitbucket.org/onsac-aio/aio-ansible.git
+```
+```sh
+git clone https://onsac@bitbucket.org/onsac-aio/aio-api.git
+```
+```sh
+git clone https://onsac@bitbucket.org/onsac-aio/aio-app.git
+```
+```sh
+ln -s /aio/aiop/aio-setup/.aio/aio-prd-config-geral.yml .production-aio-config-geral.yml
+```
+```sh
+ln -s /aio/aiop/aio-setup/.aio/aio-prd-config-regra.yml .production-aio-config-regra.yml
+```
+```sh
+npm install -g pm2
+```
+```sh
+pm2 install pm2-logrotate 
+```
+```sh
+pm2 link svnfgywh46k3e51 dlrucnwgh2w7bzs
+```
+```sh
+pm2 startup
+```
+```sh
+sudo env PATH=$PATH:/aio/.nvm/versions/node/v11.15.0/bin /aio/.nvm/versions/node/v11.15.0/lib/node_modules/pm2/bin/pm2 startup systemd -u aio --hp /aio
+```
+```sh
+pm2 start /aio/aiop/aio-ansible/aio-ansible.js
+```
+```sh
+pm2 start /aio/aiop/aio-ansible/aio-ansible-track.js
+```
+```sh
+pm2 start /aio/aiop/aio-api/aio-api.js
+```
+```sh
+pm2 start /aio/aiop/aio-app/aio-app.js
+```
+```sh
+cd /aio/aiop/aio-setup
+```
+```sh
+node setupUsers admin ######### true n
+```
+```sh
+node setupUsers aiointegrador ######### true n
+```
 
 
 
