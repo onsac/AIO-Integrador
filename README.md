@@ -144,17 +144,20 @@ sudo systemctl restart mongod
 Criar Usuário
 ```sh
 mongo
-
+```
 ```sh
 use admin
 db.createUser({user: "admin",pwd: "onSAC030",roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]})
 ```
+
 ```sh
 use aio
 db.createUser({user: "aiouser",pwd: "aioUSER030",roles: [{ role: "readWrite", db: "aio" }, { role: "userAdmin", db: "admin" }, { role: "userAdminAnyDatabase", db: "admin" }]})   ```  
+
 ```sh
 exit
 ```
+
 Segurança
 ```sh
 vi /etc/mongod.conf
