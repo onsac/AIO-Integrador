@@ -22,8 +22,8 @@ A plataforma de integração que facilitará suas operações e otimiza o gerenc
 
 - [Check Prerequisites](#check-prerequisites)
 - [Criar Usuário](#criar-usuário)
-- [What's included](#whats-included)
-- [Bugs and feature requests](#bugs-and-feature-requests)
+- [Instalar Git](#instalar-git)
+- [Instalar e Configurar MONGODB](#instalar-e-configurar-MONGODB)
 - [Documentation](#documentation)
 - [Contributing](#contributing)
 - [Community](#community)
@@ -86,3 +86,77 @@ sudo passwd aio
 ```sh
 usermod -aG wheel aio
 ```
+## Instalar Git
+```sh
+yum install -y git
+```
+```sh
+git --version
+```
+## Instalar e Configurar MONGODB 
+```sh
+vi /etc/yum.repos.d/mongodb-org-4.0.repo
+```
+```sh
+[mongodb-org-4.0]
+name=MongoDB Repository
+baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/4.0/x86_64/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-4.0.asc
+```
+```sh
+sudo yum install -y mongodb-org
+```
+```sh
+vi /etc/mongod.conf
+```
+```sh
+net:
+  bindIp: 0.0.0.0
+```
+```sh
+vi /usr/lib/systemd/system/mongod.service
+```
+```sh
+#Environment="OPTIONS=-f /etc/mongod.conf"
+Environment="OPTIONS=--quiet -f /etc/mongod.conf"
+```
+```sh
+sudo systemctl start mongod
+```
+```sh
+sudo systemctl daemon-reload
+```
+```sh
+sudo systemctl status mongod
+```
+```sh
+sudo systemctl enable mongod
+```
+```sh
+sudo systemctl stop mongod
+```
+```sh
+sudo systemctl restart mongod
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
