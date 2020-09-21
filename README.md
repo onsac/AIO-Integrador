@@ -156,31 +156,32 @@ db.createUser({user: "aiouser",pwd: "aioUSER030",roles: [{ role: "readWrite", db
 
 
 Segurança
+
 ```sh
 vi /etc/mongod.conf
-```  
+```
 ```sh
 security:
   authorization: enabled
-```  
+```
 ```sh
 sudo systemctl restart mongod
-```  
+```
 Testar 
 ```sh
 mongo
-``` 
+```
 ```sh
 use aio 
 db.auth("aiouser", "aioUSER030")
-``` 
+```
 ```sh
 use admin
 db.auth("admin", "onSAC030")
-``` 
+```
 ```sh
 mongo mongodb://aiouser:aioUSER030@127.0.0.1:27017/aio
-``` 
+```
 
 
 
