@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://onsac.com/">
-    <img src="https://onsac.com/wp-content/uploads/2020/08/tl.png" alt="Bootstrap logo" width="200" height="165">
+    <img src="https://onsac.com/wp-content/uploads/2020/08/tl.png" alt="Bootstrap logo" width="200" height="180">
   </a>
 </p>
 
@@ -261,7 +261,7 @@ node setupUsers admin ######### true n
 node setupUsers aiointegrador ######### true n
 ```
 <p align="center">
-     <img src="https://github.com/onsac/AIO-Integrador/blob/master/aio-config-geral.PNG" alt="Configuração Geral" width="800" height="600">
+     <img src="https://github.com/onsac/AIO-Integrador/blob/master/aio-config-geral.PNG" alt="Configuração Geral" >
 </p>
 
 
