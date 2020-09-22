@@ -20,12 +20,14 @@ A plataforma de integração que facilitará suas operações e otimiza o gerenc
 
 ## Procedimento de Instalação e Configuração
 
-- [Check Prerequisites](#check-prerequisites)
-- [Criar Usuário](#criar-usuário)
-- [Instalar Git](#instalar-git)
-- [Instalar e Configurar MONGODB](#instalar-e-configurar-MONGODB)
-- [Instalar nvm](#instalar-nvm)
-- [Deploy AIO Integrador](#deploy-AIO-integrador)
+- [Configuração inicial](#configuracao-inicial)
+- [Criação do Usuário no SO](#criacao-do-usuario-no-SO)
+- [Instalação do Git](#instalar-git)
+- [Instalação e Configuração MONGODB](#instalar-e-configurar-MONGODB)
+- [Instalação do nvm](#instalar-nvm)
+- [Instalação e Configuração do AIO Integrador](#deploy-AIO-integrador)
+- [Configuração do Ansible](#configuracao-no-ansible-tower)
+- [Configuração do Control-M](#configuracao-no-controlm)
 
 ## Configuração inicial
 
@@ -287,7 +289,11 @@ node setupUsers aiointegrador ######### true n
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/aio-config-geral.PNG" alt="Configuração Geral" >
 </p>
 
+## Configuração do Control-M
 
+<p align="center">
+     <img src="https://github.com/onsac/AIO-Integrador/blob/master/aio-config-geral.PNG" alt="Configuração Geral" >
+</p>
 
 
 
