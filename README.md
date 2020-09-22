@@ -260,7 +260,9 @@ node setupUsers admin ######### true n
 ```sh
 node setupUsers aiointegrador ######### true n
 ```
-
+<p align="center">
+     <img src="https://github.com/onsac/AIO-Integrador/blob/master/aio-config-geral.PNG" alt="Configuração Geral" width="800" height="600">
+</p>
 
 
 
