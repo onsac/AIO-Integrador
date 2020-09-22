@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<h3 align="center">AIO-Integrador</h3>
+<h3 align="center">AIO Integrador</h3>
 
 <p align="center">
   Automações e Integrações sem limitações (AIops/DEVops)
@@ -13,12 +13,12 @@
   </p>
   
   
-  ## AIO Integrador
+## AIO Integrador
 
 A plataforma de integração que facilitará suas operações e otimiza o gerenciamento de volume de incidentes da sua empresa.
 
 
-## Documento estalação AIO Integrador.
+## Documento Setup.
 
 - [Check Prerequisites](#check-prerequisites)
 - [Criar Usuário](#criar-usuário)
@@ -28,17 +28,18 @@ A plataforma de integração que facilitará suas operações e otimiza o gerenc
 - [Deploy AIO Integrador](#deploy-AIO-integrador)
 
 ## Check Prerequisites
-    yum update
-</br>
-	  
-    hostnamectl
-</br> 
-
-	vi /etc/hostname
-</br>
-
-	vi /etc/hosts
-    
+```sh
+yum update
+```
+```sh 
+hostnamectl
+```
+```sh 
+vi /etc/hostname
+```
+```sh 
+vi /etc/hosts
+```    
 ```sh  
 ## AIO Integrador
 192.168.1.64    aio-app1.onsac.com
@@ -47,9 +48,9 @@ A plataforma de integração que facilitará suas operações e otimiza o gerenc
 ## CTMEM
 192.168.1.75    ctm900.onsac.com
 ```
-
-	vi /etc/security/limits.conf
-  
+```sh
+vi /etc/security/limits.conf
+```  
 ```sh
 *               hard    nofile          64000
 *               soft    nofile          64000
