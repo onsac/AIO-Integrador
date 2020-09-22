@@ -18,7 +18,7 @@
 A plataforma de integração que facilitará suas operações e otimiza o gerenciamento de volume de incidentes da sua empresa.
 
 
-## Documento Setup.
+## Procedimento de Instalação e Configuração
 
 - [Check Prerequisites](#check-prerequisites)
 - [Criar Usuário](#criar-usuário)
@@ -90,6 +90,9 @@ yum install -y git
 git --version
 ```
 ## Instalar e Configurar MONGODB 
+
+Instalação do MONGODB
+
 ```sh
 vi /etc/yum.repos.d/mongodb-org-4.0.repo
 ```
@@ -104,6 +107,9 @@ gpgkey=https://www.mongodb.org/static/pgp/server-4.0.asc
 ```sh
 sudo yum install -y mongodb-org
 ```
+
+Configuração
+
 ```sh
 vi /etc/mongod.conf
 ```
@@ -184,6 +190,9 @@ mongo mongodb://aiouser:aioUSER030@127.0.0.1:27017/aio
 ```
 
 ## Instalar nvm
+
+Instalação do NODEJS e NPM
+
 ```sh
 sudo su - aio
 ```
@@ -199,7 +208,10 @@ export NVM_DIR="$HOME/.nvm"
 nvm install 11
 ```
 
-## Deploy AIO Integrador
+## Instalação e Configuração do AIO Integrador
+
+Deploy dos componentes da solução
+
 ```sh
 mkdir /aio/aiop
 ```
@@ -224,6 +236,8 @@ ln -s /aio/aiop/aio-setup/.aio/aio-prd-config-geral.yml .production-aio-config-g
 ```sh
 ln -s /aio/aiop/aio-setup/.aio/aio-prd-config-regra.yml .production-aio-config-regra.yml
 ```
+Instalação do PM2
+
 ```sh
 npm install -g pm2
 ```
@@ -251,6 +265,8 @@ pm2 start /aio/aiop/aio-api/aio-api.js
 ```sh
 pm2 start /aio/aiop/aio-app/aio-app.js
 ```
+Criação dos usuários da API e Administração
+
 ```sh
 cd /aio/aiop/aio-setup
 ```
