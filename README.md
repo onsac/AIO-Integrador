@@ -27,10 +27,10 @@ A plataforma de integração que facilitará suas operações e otimiza o gerenc
 - [Instalar nvm](#instalar-nvm)
 - [Deploy AIO Integrador](#deploy-AIO-integrador)
 
-## Check Prerequisites
-```sh
-yum update
-```
+## Configuração inicial
+
+Hostname e IPs
+
 ```sh 
 hostnamectl
 ```
@@ -42,12 +42,14 @@ vi /etc/hosts
 ```    
 ```sh  
 ## AIO Integrador
-192.168.1.64    aio-app1.onsac.com
+192.168.1.64    aio-app1
 ## Ansible
-192.168.1.71    co8-ansible.onsac.com
+192.168.1.71    ansible
 ## CTMEM
-192.168.1.75    ctm900.onsac.com
+192.168.1.75    controlm
 ```
+Parâmetros do SO
+
 ```sh
 vi /etc/security/limits.conf
 ```  
@@ -68,11 +70,11 @@ hostnamectl
 ulimit -a
 ```
 ```sh
-ping aio-app1.onsac.com
-ping co8-ansible.onsac.com
-ping ctm900.onsac.com
+ping aio-app1
+ping ansible
+ping controlm
 ```
-## Criar Usuário
+## Criação do Usuário no SO
 ```sh
 sudo useradd -d /aio -m -c "AIO Integrador" -s /bin/bash aio
 ```
@@ -82,14 +84,17 @@ sudo passwd aio
 ```sh
 usermod -aG wheel aio
 ```
-## Instalar Git
+## Instalação do Git
+```sh
+yum update -y
+```
 ```sh
 yum install -y git
 ```
 ```sh
 git --version
 ```
-## Instalar e Configurar MONGODB 
+## Instalação e Configuração MONGODB 
 
 Instalação do MONGODB
 
@@ -108,7 +113,7 @@ gpgkey=https://www.mongodb.org/static/pgp/server-4.0.asc
 sudo yum install -y mongodb-org
 ```
 
-Configuração
+Configuração do MONGODB
 
 ```sh
 vi /etc/mongod.conf
@@ -143,7 +148,7 @@ sudo systemctl stop mongod
 sudo systemctl restart mongod
 ```
 
-Criar Usuário
+Criação do Usuário no DB
 ```sh
 mongo
 ```
@@ -161,7 +166,7 @@ db.createUser({user: "aiouser",pwd: "aioUSER030",roles: [{ role: "readWrite", db
 ```sh
 exit
 ```
-Segurança
+Habilitando a segurança no MONGODB
 
 ```sh
 vi /etc/mongod.conf
@@ -173,7 +178,7 @@ security:
 ```sh
 sudo systemctl restart mongod
 ```
-Testar 
+Testando a conexção com os novos usuários
 ```sh
 mongo
 ```
@@ -189,7 +194,7 @@ db.auth("admin", "onSAC030")
 mongo mongodb://aiouser:aioUSER030@127.0.0.1:27017/aio
 ```
 
-## Instalar nvm
+## Instalação do nvm
 
 Instalação do NODEJS e NPM
 
@@ -276,6 +281,8 @@ node setupUsers admin ######### true n
 ```sh
 node setupUsers aiointegrador ######### true n
 ```
+## Configuração do Ansible
+
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/aio-config-geral.PNG" alt="Configuração Geral" >
 </p>
