@@ -20,16 +20,16 @@ A plataforma de integração que facilitará suas operações e otimiza o gerenc
 
 ## Procedimento de Instalação e Configuração
 
-- [Configuracao inicial](#configuracao-inicial)
-- [Criacao do Usuario no SO](#criacao-do-usuario-no-SO)
-- [Instalação do Git](#instalar-git)
-- [Instalação e Configuração MONGODB](#instalar-e-configurar-MONGODB)
-- [Instalação do nvm](#instalar-nvm)
-- [Instalação e Configuração do AIO Integrador](#deploy-AIO-integrador)
-- [Configuração do Ansible](#configuracao-no-ansible-tower)
-- [Configuração do Control-M](#configuracao-no-controlm)
+- [Configura SO](#configura-so)
+- [Cria conta no SO](#cria-conta-no-so)
+- [Instala Git](#instala-git)
+- [Instala e Configura MONGODB](#instala-e-configura-MONGODB)
+- [Instala nvm](#instala-nvm)
+- [Instala e Configura AIO Integrador](#instala-e-configura-aio-integrador)
+- [Configura Ansible](#configura-ansible)
+- [Configura Control-M](#configura-controlm)
 
-## Configuracao inicial
+## Configura SO
 
 Hostname e IPs
 
@@ -76,7 +76,7 @@ ping aio-app1
 ping ansible
 ping controlm
 ```
-## Criacao do Usuario no SO
+## Cria conta no SO
 ```sh
 sudo useradd -d /aio -m -c "AIO Integrador" -s /bin/bash aio
 ```
@@ -86,7 +86,7 @@ sudo passwd aio
 ```sh
 usermod -aG wheel aio
 ```
-## Instalação do Git
+## Instala Git
 ```sh
 yum update -y
 ```
@@ -96,7 +96,7 @@ yum install -y git
 ```sh
 git --version
 ```
-## Instalação e Configuração MONGODB 
+## Instala e Configura MONGODB 
 
 Instalação do MONGODB
 
@@ -196,7 +196,7 @@ db.auth("admin", "onSAC030")
 mongo mongodb://aiouser:aioUSER030@127.0.0.1:27017/aio
 ```
 
-## Instalação do nvm
+## Instala nvm
 
 Instalação do NODEJS e NPM
 
@@ -215,7 +215,7 @@ export NVM_DIR="$HOME/.nvm"
 nvm install 11
 ```
 
-## Instalação e Configuração do AIO Integrador
+## Instala e Configura AIO Integrador
 
 Deploy dos componentes da solução
 
@@ -283,13 +283,13 @@ node setupUsers admin ######### true n
 ```sh
 node setupUsers aiointegrador ######### true n
 ```
-## Configuração do Ansible
+## Configura Ansible
 
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/aio-config-geral.PNG" alt="Configuração Geral" >
 </p>
 
-## Configuração do Control-M
+## Configura Control-M
 
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/aio-config-geral.PNG" alt="Configuração Geral" >
