@@ -20,8 +20,8 @@ A plataforma de integração que facilitará suas operações e otimiza o gerenc
 
 ## Procedimento de Instalação e Configuração
 
-- [Configuração inicial](#configuracao-inicial)
-- [Criação do Usuário no SO](#criacao-do-usuario-no-SO)
+- [Configuracao inicial](#configuracao-inicial)
+- [Criacao do Usuario no SO](#criacao-do-usuario-no-SO)
 - [Instalação do Git](#instalar-git)
 - [Instalação e Configuração MONGODB](#instalar-e-configurar-MONGODB)
 - [Instalação do nvm](#instalar-nvm)
