@@ -29,7 +29,7 @@ A plataforma de integração que facilitará suas operações e otimiza o gerenc
 - [Configuração do Ansible](#configuracao-no-ansible-tower)
 - [Configuração do Control-M](#configuracao-no-controlm)
 
-## Configuração inicial
+## Configuracao inicial
 
 Hostname e IPs
 
@@ -76,7 +76,7 @@ ping aio-app1
 ping ansible
 ping controlm
 ```
-## Criação do Usuário no SO
+## Criacao do Usuario no SO
 ```sh
 sudo useradd -d /aio -m -c "AIO Integrador" -s /bin/bash aio
 ```
