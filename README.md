@@ -15,7 +15,7 @@
   
 ## AIO Integrador
 
-A plataforma de integração que facilitará suas operações e otimiza o gerenciamento de volume de incidentes da sua empresa.
+A plataforma de integração que facilita a jornada de automação e redução de custos da sua empresa.
 
 
 ## Procedimento de Instalação e Configuração
@@ -351,6 +351,8 @@ Adicionar as respectivas permissões ao usuário
 
 ## Configura Control-M
 
+Na console do Control-M Configuration Manager, crie um usuário para o integrador (aiointegrador)
+
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%201.jpeg" alt="Tela-control-m (1)" >
 </p>
@@ -359,9 +361,13 @@ Adicionar as respectivas permissões ao usuário
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%202.jpeg" alt="Tela-control-m (2)" >
 </p>
 
+Coloque no grupo AdminGroup
+
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%203.jpeg" alt="Tela-control-m (3)" >
 </p>
+
+Entre na console do Control-M Application Integrator
 
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%204.png" alt="Tela-control-m (4)" >
@@ -371,25 +377,38 @@ Adicionar as respectivas permissões ao usuário
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%205.jpeg" alt="Tela-control-m (5)" >
 </p>
 
+Baixe o arquivo do plugin aioansible do servidor do AIO Integrador, que fica na pasta /aio/aiop/aio-ansible/projects
+
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%206.jpeg" alt="Tela-control-m (6)" >
 </p>
+
+Importe o arquivo do plugin
 
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%207.jpeg" alt="Tela-control-m (7)" >
 </p>
 
+Clique no plugin 
+
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%208.jpeg" alt="Tela-control-m (8)" >
 </p>
+
+Clique no botão Deploy
 
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%209.jpeg" alt="Tela-control-m (9)" >
 </p>
 
+Selecione o agente desejado e clique no botão Deploy
+
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2010.jpeg" alt="Tela-control-m (10)" >
 </p>
+
+Aguarde a conclusão com sucesso do processo de deploy, e na sequencia volte para a Console co Control-M Configuration Manager, para criar o profile. 
+Selecione o agente onde foi realizado o Deploy, clicando com o botão direito.
 
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2011.jpeg" alt="Tela-control-m (11)" >
