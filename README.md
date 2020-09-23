@@ -473,6 +473,4 @@ Conclua a configuração do JOB, ajustando o nome do JOB, Folder, Application e 
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2022.jpeg" alt="Tela-control-m (22)" >
 </p>
 
-<p align="center">
-  Tecnologia 100% brasileira
-  </p>
+
