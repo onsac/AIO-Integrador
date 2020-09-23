@@ -267,10 +267,10 @@ pm2 start /aio/aiop/aio-ansible/aio-ansible.js
 pm2 start /aio/aiop/aio-ansible/aio-ansible-track.js
 ```
 ```sh
-pm2 start /aio/aiop/aio-api/aio-api.js
+pm2 start /aio/aiop/aio-api/aiop-api.js
 ```
 ```sh
-pm2 start /aio/aiop/aio-app/aio-app.js
+pm2 start /aio/aiop/aio-app/aiop-app.js
 ```
 Criação dos usuários da API e Administração
 
