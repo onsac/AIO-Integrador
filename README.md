@@ -180,7 +180,7 @@ security:
 ```sh
 sudo systemctl restart mongod
 ```
-Testando a conexção com os novos usuários
+Testando a conexão com os novos usuários
 ```sh
 mongo
 ```
