@@ -398,7 +398,7 @@ Selecione o agente desejado e clique no botão Deploy
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2010.jpeg" alt="Tela-control-m (10)" >
 </p>
 
-Aguarde a conclusão com sucesso do processo de deploy, e na sequencia volte para a Console co Control-M Configuration Manager, para criar o profile. 
+Aguarde a conclusão com sucesso do processo de deploy, e na sequência volte para a Console co Control-M Configuration Manager, para criar o profile. 
 Selecione o agente onde foi realizado o Deploy, clicando com o botão direito.
 
 <p align="center">
