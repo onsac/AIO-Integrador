@@ -232,12 +232,6 @@ git clone https://onsac@bitbucket.org/onsac/aio-setup.git
 git clone https://onsac@bitbucket.org/onsac-aio/aio-ansible.git
 ```
 ```sh
-git clone https://onsac@bitbucket.org/onsac-aio/aio-api.git
-```
-```sh
-git clone https://onsac@bitbucket.org/onsac-aio/aio-app.git
-```
-```sh
 ln -s /aio/aiop/aio-setup/.aio/aio-prd-config-geral.yml .production-aio-config-geral.yml
 ```
 ```sh
