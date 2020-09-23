@@ -414,47 +414,69 @@ Selecione o agente onde foi realizado o Deploy, clicando com o botão direito.
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2011.jpeg" alt="Tela-control-m (11)" >
 </p>
 
+Crie um profile para cada prefixo de folder seguindo o exemplo abaixo, para concluir a configuração do Plugin aioansible
+
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2012.jpeg" alt="Tela-control-m (12)" >
 </p>
 
+Na console do Control-M entre no dmínio Planer para organizar as Folders com os seus respectivos tipos de JOBs, lembrando que nessa peimeira etapa a integração contepla os JOBs do tipo SO (Command, Script e EmbededScript). 
 
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2013.jpeg" alt="Tela-control-m (13)" >
 </p>
 
+Nota : Se existir um job de tipo não compatível o fluxo inteiro não será executado no Ansible.
+
+O nome da nova Folder deverá ter o mesmo prefixo definido no profile no CCM.
+
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2014.jpeg" alt="Tela-control-m (14)" >
 </p>
+
+Criando um job do tipo (aioansible)
 
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2015.jpeg" alt="Tela-control-m (15)" >
 </p>
 
+Selecione o novo tipo, se não estiver aparecendo na sua console, faça o logout e na sequência login novamente para a console carregar o novo template.
+
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2016.jpeg" alt="Tela-control-m (16)" >
 </p>
+
+Arraste e solte no centro da tela, conforme abaixo
 
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2017.jpeg" alt="Tela-control-m (17)" >
 </p>
 
+Penencha todos os campos requeridos, que estão sinalizados em vermelho.
+
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2018.jpeg" alt="Tela-control-m (18)" >
 </p>
+
+Selecione o profile, vc precisa seleciolar ou preencher o nodeid caso o profile tenha sido criado em um servidor diferente do Control-M Server.
 
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2019.jpeg" alt="Tela-control-m (19)" >
 </p>
 
+Selecione o Datacenter desejado
+
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2020.jpeg" alt="Tela-control-m (20)" >
 </p>
+
+Selecione a folder desejada, na lista de seleção só aparecerá as folders que tiverem o mesmo prefixo configurado no profile.
 
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2021.jpeg" alt="Tela-control-m (21)" >
 </p>
 
+Conclua a configuração do JOB, ajustando o nome do JOB, Folder, Application e SubApplication.
 
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2022.jpeg" alt="Tela-control-m (22)" >
