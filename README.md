@@ -320,10 +320,12 @@ Adiocione os respectivos Hosts (nodeId) onde teremos execuções de JOBs
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible%20(3).png" alt="Tela-ansible(3)" >
 </p>
+
 ```sh
 ansible_connection: ssh
 ansible_python_interpreter: '{{ ansible_playbook_python }}'
 ```
+
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible%20(4).png" alt="Tela-ansible(4)" >
 </p>
