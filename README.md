@@ -329,7 +329,7 @@ Criar um projeto com o nome (aio-ansible), do tipo Manual apontando para o diret
 
 Criar o usuário do integrador (aiointegrador)
 <p align="center">
-     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible%20(6).png" alt="Tela-ansible(6)" >
+     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible%20(6).jpeg" alt="Tela-ansible(6)" >
 </p>
 
 Adicionar as respectivas permissões ao usuário
