@@ -333,7 +333,7 @@ Criar um projeto com o nome (aio-ansible), do tipo Manual apontando para o diret
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible%20(5).png" alt="Tela-ansible(5)" >
 </p>
 
-Criar o uruário do integrador (aiointegrador)
+Criar o usuário do integrador (aiointegrador)
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible%20(6).png" alt="Tela-ansible(6)" >
 </p>
@@ -417,7 +417,7 @@ Crie um profile para cada prefixo de folder seguindo o exemplo abaixo, para conc
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2012.jpeg" alt="Tela-control-m (12)" >
 </p>
 
-Na console do Control-M entre no dmínio Planer para organizar as Folders com os seus respectivos tipos de JOBs, lembrando que nessa peimeira etapa a integração contepla os JOBs do tipo SO (Command, Script e EmbededScript). 
+Na console do Control-M entre no domínio Planer para organizar as Folders com os seus respectivos tipos de JOBs, lembrando que nessa primeira etapa a integração contempla os JOBs do tipo SO (Command, Script e EmbededScript). 
 
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2013.jpeg" alt="Tela-control-m (13)" >
@@ -449,13 +449,13 @@ Arraste e solte no centro da tela, conforme abaixo
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2017.jpeg" alt="Tela-control-m (17)" >
 </p>
 
-Penencha todos os campos requeridos, que estão sinalizados em vermelho.
+Preencha todos os campos requeridos, que estão sinalizados em vermelho.
 
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2018.jpeg" alt="Tela-control-m (18)" >
 </p>
 
-Selecione o profile, vc precisa seleciolar ou preencher o nodeid caso o profile tenha sido criado em um servidor diferente do Control-M Server.
+Selecione o profile, vc precisa selecionar ou preencher o nodeid caso o profile tenha sido criado em um servidor diferente do Control-M Server.
 
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2019.jpeg" alt="Tela-control-m (19)" >
