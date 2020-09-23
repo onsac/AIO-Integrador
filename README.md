@@ -302,33 +302,33 @@ wget https://github.com/onsac/aio-ansible-jobs/blob/master/aio-ansible-playbook-
 wget https://github.com/onsac/aio-ansible-jobs/blob/master/aio-ansible-playbook-Job_Script.yml
 ```
 <p align="center">
-     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Tela-ansible(1).png" alt="Tela-ansible(1)" >
+     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible(1).png" alt="Tela-ansible(1)" >
 </p>
 
 <p align="center">
-     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Tela-ansible(2).png" alt="Tela-ansible(2)" >
+     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible(2).png" alt="Tela-ansible(2)" >
 </p>
 
 <p align="center">
-     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Tela-ansible%20(3).png" alt="Tela-ansible(3)" >
+     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible%20(3).png" alt="Tela-ansible(3)" >
 </p>
 
 <p align="center">
-     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Tela-ansible%20(4).png" alt="Tela-ansible(4)" >
-</p>
-
-
-<p align="center">
-     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Tela-ansible%20(5).png" alt="Tela-ansible(5)" >
-</p>
-
-<p align="center">
-     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Tela-ansible%20(6).png" alt="Tela-ansible(6)" >
+     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible%20(4).png" alt="Tela-ansible(4)" >
 </p>
 
 
 <p align="center">
-     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Tela-ansible%20(7).png" alt="Tela-ansible(7)" >
+     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible%20(5).png" alt="Tela-ansible(5)" >
+</p>
+
+<p align="center">
+     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible%20(6).png" alt="Tela-ansible(6)" >
+</p>
+
+
+<p align="center">
+     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible%20(7).png" alt="Tela-ansible(7)" >
 </p>
 
 
