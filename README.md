@@ -260,18 +260,7 @@ pm2 startup
 ```sh
 sudo env PATH=$PATH:/aio/.nvm/versions/node/v11.15.0/bin /aio/.nvm/versions/node/v11.15.0/lib/node_modules/pm2/bin/pm2 startup systemd -u aio --hp /aio
 ```
-```sh
-pm2 start /aio/aiop/aio-ansible/aio-ansible.js
-```
-```sh
-pm2 start /aio/aiop/aio-ansible/aio-ansible-track.js
-```
-```sh
-pm2 start /aio/aiop/aio-api/aiop-api.js
-```
-```sh
-pm2 start /aio/aiop/aio-app/aiop-app.js
-```
+
 Criação dos usuários da API e Administração
 
 ```sh
@@ -283,6 +272,14 @@ node setupUsers admin ######### true n
 ```sh
 node setupUsers aiointegrador ######### true n
 ```
+Start aio-ansible
+
+```sh
+cd /aio/aiop/aio-setup
+
+node aio-ansible-start.js
+```
+
 ## Configura Ansible
 
 Configuração dos Playbooks
