@@ -285,6 +285,22 @@ node setupUsers aiointegrador ######### true n
 ```
 ## Configura Ansible
 
+Configuração dos Playbooks
+```sh
+mkdir /var/lib/awx/projects/aio-ansible
+```
+```sh
+cd /var/lib/awx/projects/aio-ansible
+```
+```sh
+wget https://github.com/onsac/aio-ansible-jobs/blob/master/aio-ansible-playbook-Job_Command.yml
+```
+```sh
+wget https://github.com/onsac/aio-ansible-jobs/blob/master/aio-ansible-playbook-Job_EmbeddedScript.yml
+```
+```sh
+wget https://github.com/onsac/aio-ansible-jobs/blob/master/aio-ansible-playbook-Job_Script.yml
+```
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/aio-config-geral.PNG" alt="Configuração Geral" >
 </p>
