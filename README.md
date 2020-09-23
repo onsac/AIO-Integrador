@@ -27,7 +27,7 @@ A plataforma de integração que facilita a jornada de automação e redução d
 - [Instala nvm](#instala-nvm)
 - [Instala e Configura AIO Integrador](#instala-e-configura-aio-integrador)
 - [Configura Ansible](#configura-ansible)
-- [Configura Control-M](#configura-controlm)
+- [Configura ControlM](#configura-controlm)
 
 ## Configura SO
 
@@ -349,7 +349,7 @@ Adicionar as respectivas permissões ao usuário
 
 
 
-## Configura Control-M
+## Configura ControlM
 
 Na console do Control-M Configuration Manager, crie um usuário para o integrador (aiointegrador)
 
