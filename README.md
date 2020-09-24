@@ -31,6 +31,8 @@ A plataforma de integração que facilita a jornada de automação e redução d
 
 ## Configura SO
 
+Antes de iniciar os procedimentos verifique se o servidor possui acesso a internet, se o acesso for via proxy <a href="https://onsac.com/"><strong>Configurando o acesso via Proxy »</strong></a>
+
 Hostname e IPs
 
 ```sh 
@@ -151,6 +153,8 @@ sudo systemctl restart mongod
 ```
 
 Criação do Usuário no DB
+NOTA : Não use @ na senha
+
 ```sh
 mongo
 ```
