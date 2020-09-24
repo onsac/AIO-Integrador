@@ -503,11 +503,6 @@ Selecione a folder desejada, na lista de seleção só aparecerá as folders que
 Conclua a configuração do JOB, ajustando o nome do JOB, Folder, Application e SubApplication.
 
 <p align="center">
-     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2022.jpeg" alt="Tela-control-m (22)" >
-</p>
-
-
-<p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2023.jpeg" alt="Tela-control-m (23)" >
 </p>
 
