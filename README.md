@@ -31,9 +31,8 @@ A plataforma de integração que facilita a jornada de automação e redução d
 
 ## Configura SO
 
-Antes de iniciar os procedimentos verifique se o servidor possui acesso a internet, se o acesso for via proxy <a href="https://github.com/onsac/AIO-Integrador/blob/master/Configura%C3%A7%C3%A3o%20de%20um%20proxy%20corporativo.markdown"><strong>Configurando o acesso via Proxy »</strong></a>
+Antes de iniciar os procedimentos verifique se o servidor possui acesso a internet, se o acesso for via proxy <a href="https://github.com/onsac/AIO-Integrador/blob/master/Configura%C3%A7%C3%A3o%20de%20um%20proxy%20corporativo.markdown">Configurando o acesso via Proxy</a>
 
-[Configuração de um proxy corporativo](href="https://github.com/onsac/AIO-Integrador/blob/master/Configura%C3%A7%C3%A3o%20de%20um%20proxy%20corporativo.markdown")
 
 Hostname e IPs
 
