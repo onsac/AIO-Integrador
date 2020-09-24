@@ -431,17 +431,25 @@ Selecione o agente desejado e clique no botão Deploy
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2010.jpeg" alt="Tela-control-m (10)" >
 </p>
 
+Caso o agente não apareça na lista, siga os passos a seguir para realizar o Deploy do Application Pack
+
+No CCM entre na opção manager
+
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2027.png" alt="Tela-control-m (27)" >
 </p>
-
+ Crie a atividade de Upgrade e Install do Application Pack no servidor desejado.
+ 
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2028.jpeg" alt="Tela-control-m (28)" >
 </p>
 
+Aguarde a conclusão da instalação. e Volte no Application Integrator para seguir com o Deploy do plugin
+
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2029.jpeg" alt="Tela-control-m (29)" >
 </p>
+
 Aguarde a conclusão com sucesso do processo de deploy, e na sequência volte para a Console co Control-M Configuration Manager, para criar o profile. 
 Selecione o agente onde foi realizado o Deploy, clicando com o botão direito.
 
