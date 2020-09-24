@@ -507,3 +507,21 @@ Conclua a configuração do JOB, ajustando o nome do JOB, Folder, Application e 
 </p>
 
 
+<p align="center">
+     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2023.jpeg" alt="Tela-control-m (23)" >
+</p>
+
+<p align="center">
+     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2024.jpeg" alt="Tela-control-m (24)" >
+</p>
+
+<p align="center">
+     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2025.jpeg" alt="Tela-control-m (25)" >
+</p>
+
+<p align="center">
+     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2026.jpeg" alt="Tela-control-m (28)" >
+</p>
+```sh
+tail -f /aio/.pm2/logs/aio-ansible-out.log
+```
