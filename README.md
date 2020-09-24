@@ -270,7 +270,7 @@ cd /aio/aiop/aio-setup
 node setupUsers admin ######### true n
 ```
 ```sh
-node setupUsers aiointegrador ######### true n
+node setupUsers aiointegrador ######### true s
 ```
 Start aio-ansible
 
