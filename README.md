@@ -28,11 +28,10 @@ A plataforma de integração que facilita a jornada de automação e redução d
 - [Instala e Configura AIO Integrador](#instala-e-configura-aio-integrador)
 - [Configura Ansible](#configura-ansible)
 - [Configura ControlM](#configura-controlm)
-- [Configuração de um proxy corporativo](Configuração de um proxy corporativo.markdown)
 
 ## Configura SO
 
-Antes de iniciar os procedimentos verifique se o servidor possui acesso a internet, se o acesso for via proxy <a href="https://onsac.com/"><strong>Configurando o acesso via Proxy »</strong></a>
+Antes de iniciar os procedimentos verifique se o servidor possui acesso a internet, se o acesso for via proxy <a href="https://github.com/onsac/AIO-Integrador/blob/master/Configura%C3%A7%C3%A3o%20de%20um%20proxy%20corporativo.markdown"><strong>Configurando o acesso via Proxy »</strong></a>
 
 Hostname e IPs
 
