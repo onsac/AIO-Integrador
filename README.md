@@ -506,17 +506,25 @@ Conclua a configuração do JOB, ajustando o nome do JOB, Folder, Application e 
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2023.jpeg" alt="Tela-control-m (23)" >
 </p>
 
+Ordene o JOB
+
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2024.jpeg" alt="Tela-control-m (24)" >
 </p>
+
+Acompanhe no Control-M Monitoring
 
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2025.jpeg" alt="Tela-control-m (25)" >
 </p>
 
+Acompanhe na Consolçe do Ansible
+
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2026.jpeg" alt="Tela-control-m (28)" >
 </p>
+
+Acompanhe no Servidor do AIO
 
 ```sh
 tail -f /aio/.pm2/logs/aio-ansible-out.log
