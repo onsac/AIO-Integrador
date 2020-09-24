@@ -518,7 +518,7 @@ Acompanhe no Control-M Monitoring
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2025.jpeg" alt="Tela-control-m (25)" >
 </p>
 
-Acompanhe na Consolçe do Ansible
+Acompanhe na Console do Ansible
 
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2026.jpeg" alt="Tela-control-m (28)" >
