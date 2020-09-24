@@ -345,7 +345,33 @@ Adicionar as respectivas permissões ao usuário
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible%20(7).png" alt="Tela-ansible(7)" >
 </p>
 
+Para concluir a configuração, no Servidor do AIO
 
+```sh
+su - aio
+```
+```sh
+cd /aio/aiop/aio-setup
+```
+```sh
+node set_hash.js <senha do aiointegrador no ansible>
+```
+```sh
+vi /aio/aiop/.production-aio-config-geral.yml
+```
+```sh
+Procure "ANSIBLE"
+```
+Altere a url e password
+
+```sh
+            - sistema  : ANSIBLE
+              url      : https://<servidor ansible>
+              api      : /api/v2/
+              inventory: aio-ansible
+              user     : aiointegrador
+              password : <hash senha>
+```
 
 ## Configura ControlM
 
