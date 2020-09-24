@@ -281,7 +281,8 @@ node aio-ansible-start.js
 
 ## Configura Ansible
 
-Configuração dos Playbooks
+Configuração dos Playbooks no <strong>Servidor Ansible Tower</strong>
+
 ```sh
 mkdir /var/lib/awx/projects/aio-ansible
 ```
