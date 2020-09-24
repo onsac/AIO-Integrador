@@ -345,7 +345,7 @@ Adicionar as respectivas permissões ao usuário
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible%20(7).png" alt="Tela-ansible(7)" >
 </p>
 
-Para concluir a configuração, no Servidor do AIO
+Para concluir a configuração, volte no Servidor do AIO
 
 ```sh
 su - aio
