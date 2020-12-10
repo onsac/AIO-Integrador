@@ -387,18 +387,6 @@ su - aio
 cd /aio/aiop/aio-setup
 ```
 ```sh
-sed -i 's/AIOP/AIO/g' /aio/aiop/aio-setup/.aio/aio-prd-config-geral.yml
-```
-```sh
-sed -i 's/aio.onsac.com/<host integrador>/g' /aio/aiop/aio-setup/.aio/aio-prd-config-geral.yml
-```
-```sh
-cat /aio/aiop/aio-ansible/config-geral.yml >>/aio/aiop/aio-setup/.aio/aio-prd-config-geral.yml
-```
-```sh
-cp /aio/aiop/aio-node-snmp/config-regra.yml /aio/aiop/aio-setup/.aio/aio-prd-config-regra.yml
-```
-```sh
 node set_hash.js <senha do aiointegrador no ansible>
 ```
 ```sh
