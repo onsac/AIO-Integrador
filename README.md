@@ -318,8 +318,13 @@ Preparando o Ansible para integração com AIO
 
 Para permitir a execução nos servidores onde os JOBs são executados originalmente pelo Control-M, precisamos adicionar os hosts (nodeId) e use (runAs), o nome da credencial deve seguir o padrão (host@user)
 
+Usuário Linux
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible(1).png" alt="Tela-ansible(1)" >
+</p>
+Usuário Windowns
+<p align="center">
+     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible(9).jpeg" >
 </p>
 
 Criar um inventário com o nome (aio-ansible)
@@ -352,7 +357,7 @@ ansible_winrm_message_encryption: always
 ansible_python_interpreter: '{{ ansible_playbook_python }}'
 ```
 <p align="center">
-     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible%20(4).png" alt="Tela-ansible(4)" >
+     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible(8).jpeg" >
 </p>
 
 Criar um projeto com o nome (aio-ansible), do tipo Manual apontando para o diretório (aio-ansible)
