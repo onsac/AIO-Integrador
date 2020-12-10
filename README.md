@@ -477,7 +477,7 @@ Entre na console do Control-M Application Integrator
 Baixe o arquivo do plugin aioansible do servidor do AIO Integrador, que fica na pasta /aio/aiop/aio-ansible/projects
 
 <p align="center">
-     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%206.jpeg" alt="Tela-control-m (6)" >
+     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%206.jpeg" >
 </p>
 
 Importe o arquivo do plugin
