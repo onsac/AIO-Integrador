@@ -483,7 +483,7 @@ Baixe o arquivo do plugin aioansible do servidor do AIO Integrador, que fica na 
 Importe o arquivo do plugin
 
 <p align="center">
-     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%207.jpeg" alt="Tela-control-m (7)" >
+     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%207.jpeg.jpeg" >
 </p>
 
 Clique no plugin 
