@@ -238,6 +238,21 @@ git clone https://onsac@bitbucket.org/onsac/aio-setup.git
 git clone https://onsac@bitbucket.org/onsac-aio/aio-ansible.git
 ```
 ```sh
+git clone https://onsac@bitbucket.org/onsac/aio-node-logs.git
+```
+```sh
+git clone https://onsac@bitbucket.org/onsac/aio-node-api.git
+```
+```sh
+git clone https://onsac@bitbucket.org/onsac/aio-node-snmp.git
+```
+```sh
+git clone https://onsac@bitbucket.org/onsac/aio-app.git
+```
+```sh
+git clone https://onsac@bitbucket.org/onsac/aio-api.git
+```
+```sh
 ln -s /aio/aiop/aio-setup/.aio/aio-prd-config-geral.yml .production-aio-config-geral.yml
 ```
 ```sh
@@ -327,6 +342,18 @@ ansible_python_interpreter: '{{ ansible_playbook_python }}'
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible%20(4).png" alt="Tela-ansible(4)" >
 </p>
+```sh
+ansible_port: 5985
+ansible_connection: winrm
+ansible_winrm_transport: credssp
+ansible_winrm_server_cert_validation: ignore
+ansible_winrm_credssp_disable_tlsv1_2: true
+ansible_winrm_message_encryption: always
+ansible_python_interpreter: '{{ ansible_playbook_python }}'
+```
+<p align="center">
+     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible%20(4).png" alt="Tela-ansible(4)" >
+</p>
 
 Criar um projeto com o nome (aio-ansible), do tipo Manual apontando para o diretório (aio-ansible)
 
@@ -354,14 +381,30 @@ su - aio
 cd /aio/aiop/aio-setup
 ```
 ```sh
+sed -i 's/AIOP/AIO/g' /aio/aiop/aio-setup/.aio/aio-prd-config-geral.yml
+```
+```sh
+sed -i 's/aio.onsac.com/<host integrador>/g' /aio/aiop/aio-setup/.aio/aio-prd-config-geral.yml
+```
+```sh
+cat /aio/aiop/aio-ansible/config-geral.yml >>/aio/aiop/aio-setup/.aio/aio-prd-config-geral.yml
+```
+```sh
+cp /aio/aiop/aio-node-snmp/config-regra.yml /aio/aiop/aio-setup/.aio/aio-prd-config-regra.yml
+```
+```sh
 node set_hash.js <senha do aiointegrador no ansible>
+```
+```sh
+node set_hash.js <senha do aiointegrador no control-m>
+```
+```sh
+node set_hash.js <senha do aiointegrador no integrador>
 ```
 ```sh
 vi /aio/aiop/.production-aio-config-geral.yml
 ```
-```sh
 Procure "ANSIBLE"
-```
 Altere a url e password
 
 ```sh
@@ -370,8 +413,32 @@ Altere a url e password
               api      : /api/v2/
               inventory: aio-ansible
               user     : aiointegrador
-              password : <hash senha>
+              password : <hash senha ansible>
 ```
+Procure "sistema  : Control-M"
+Altere o hostname, port, user e password
+
+```sh
+            - sistema  : Control-M
+              hostname : <servidor control-m>
+              port     : <port>
+              api      : /automation-api
+              versao   : 900-500
+              user     : <aiointegrador>
+              password : <hash senha control-m>
+```
+Procure "aioapi  :"
+Altere o user e password
+
+```sh
+    aioapi  :
+        url        : http://aio.onsac.com
+        port       : 8081
+        user       : <aiointegrador>
+        password   : <hash senha integrador>
+        module     : aio-api
+```
+
 
 ## Configura ControlM
 
