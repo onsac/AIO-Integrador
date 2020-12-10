@@ -347,6 +347,7 @@ ansible_python_interpreter: '{{ ansible_playbook_python }}'
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible%20(4).png" alt="Tela-ansible(4)" >
 </p>
+
 ```sh
 ansible_port: 5985
 ansible_connection: winrm
