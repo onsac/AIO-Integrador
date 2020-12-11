@@ -749,7 +749,8 @@ Configuração SNMP no Control-M
 </p>
 
 ```sh
-Executar o comando :
+Executar o comando no servidor do Control-m:
 ctmipc -DEST all -MSGID CFG
+Recycle o gateway para ativar a configuração
+
 ```
-* Recycle o gateway
