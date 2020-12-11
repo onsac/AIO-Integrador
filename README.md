@@ -491,8 +491,7 @@ Notifications no Ansible
 }
 ```
 <p align="center">
-     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible%20(12).jpeg
-" alt="Tela-ansible(12)" >
+     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible%20(12).jpeg" alt="Tela-ansible(12)" >
 </p>
 
 Para concluir a configuração, volte no Servidor do AIO
