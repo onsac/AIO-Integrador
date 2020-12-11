@@ -303,7 +303,7 @@ Start aio-ansible
 ```sh
 cd /aio/aiop/aio-setup
 
-node aio-ansible-start.js
+node aio-start.js
 ```
 
 ## Configura Ansible
