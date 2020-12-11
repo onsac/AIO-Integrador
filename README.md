@@ -224,7 +224,13 @@ nvm install 11
 ## Instala e Configura AIO Integrador
 
 Deploy dos componentes da solução
-
+```sh
+git config —-global credential.helper store
+```
+Altere o Password
+```sh
+echo "https://onsac:<pwd>@bitbucket.org" > ~/.git-credentials
+```
 ```sh
 mkdir /aio/aiop
 ```
@@ -608,4 +614,15 @@ Acompanhe no Servidor do AIO
 
 ```sh
 tail -f /aio/.pm2/logs/aio-ansible-out.log
+```
+## Configura aio-app
+
+Configuração SNMP no Control-M
+
+<p align="center">
+     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2030.jpeg" >
+</p>
+```sh
+Executar o comando :
+ctmipc -DEST all -MSGID CFG
 ```
