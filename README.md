@@ -373,9 +373,6 @@ su - aio
 cd /aio/aiop/aio-setup
 ```
 ```sh
-cd /aio/aiop/aio-setup
-```
-```sh
 node setupUsers admin ######### true n
 ```
 ```sh
