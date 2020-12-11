@@ -752,3 +752,4 @@ Configuração SNMP no Control-M
 Executar o comando :
 ctmipc -DEST all -MSGID CFG
 ```
+* Recycle o gateway
