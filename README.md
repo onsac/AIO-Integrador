@@ -243,25 +243,25 @@ mkdir /aio/aiop
 cd /aio/aiop
 ```
 ```sh
-git clone https://onsac@bitbucket.org/onsac/aio-setup.git	
+git clone https://onsac@bitbucket.org/onsac-aio/aio-setup.git	
 ``` 
 ```sh
 git clone https://onsac@bitbucket.org/onsac-aio/aio-ansible.git
 ```
 ```sh
-git clone https://onsac@bitbucket.org/onsac/aio-node-logs.git
+git clone https://onsac@bitbucket.org/onsac-aio/aio-node-logs.git
 ```
 ```sh
-git clone https://onsac@bitbucket.org/onsac/aio-node-api.git
+git clone https://onsac@bitbucket.org/onsac-aio/aio-node-api.git
 ```
 ```sh
-git clone https://onsac@bitbucket.org/onsac/aio-node-snmp.git
+git clone https://onsac@bitbucket.org/onsac-aio/aio-node-snmp.git
 ```
 ```sh
-git clone https://onsac@bitbucket.org/onsac/aio-app.git
+git clone https://onsac@bitbucket.org/onsac-aio/aio-app.git
 ```
 ```sh
-git clone https://onsac@bitbucket.org/onsac/aio-api.git
+git clone https://onsac@bitbucket.org/onsac-aio/aio-api.git
 ```
 ```sh
 ln -s /aio/aiop/aio-setup/.aio/aio-prd-config-geral.yml .production-aio-config-geral.yml
