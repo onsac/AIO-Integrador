@@ -232,7 +232,7 @@ Deploy dos componentes da solução
 ```sh
 git config —-global credential.helper store
 ```
-Altere o Password
+  Altere o <pwd>
 ```sh
 echo "https://onsac:<pwd>@bitbucket.org" > ~/.git-credentials
 ```
