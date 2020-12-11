@@ -287,25 +287,6 @@ pm2 startup
 sudo env PATH=$PATH:/aio/.nvm/versions/node/v11.15.0/bin /aio/.nvm/versions/node/v11.15.0/lib/node_modules/pm2/bin/pm2 startup systemd -u aio --hp /aio
 ```
 
-Criação dos usuários da API e Administração
-
-```sh
-cd /aio/aiop/aio-setup
-```
-```sh
-node setupUsers admin ######### true n
-```
-```sh
-node setupUsers aiointegrador ######### true s
-```
-Start aio-ansible
-
-```sh
-cd /aio/aiop/aio-setup
-
-node aio-start.js
-```
-
 ## Configura Ansible
 
 Configuração dos Playbooks no <strong>Servidor Ansible Tower</strong>
@@ -392,6 +373,15 @@ su - aio
 cd /aio/aiop/aio-setup
 ```
 ```sh
+cd /aio/aiop/aio-setup
+```
+```sh
+node setupUsers admin ######### true n
+```
+```sh
+node setupUsers aiointegrador ######### true s
+```
+```sh
 sed -i 's/aio.onsac.com/<host integrador>/g' /aio/aiop/aio-setup/.aio/aio-prd-config-geral.yml
 ```
 ```sh
@@ -440,7 +430,13 @@ Altere o user e password
         password   : <hash senha integrador>
         module     : aio-api
 ```
+Start aio-aio
 
+```sh
+cd /aio/aiop/aio-setup
+
+node aio-start.js
+```
 
 ## Configura ControlM
 
