@@ -233,6 +233,7 @@ Deploy dos componentes da solução
 git config —-global credential.helper store
 ```
   Altere o <pwd>
+  
 ```sh
 echo "https://onsac:<pwd>@bitbucket.org" > ~/.git-credentials
 ```
@@ -246,22 +247,86 @@ cd /aio/aiop
 git clone https://onsac@bitbucket.org/onsac-aio/aio-setup.git	
 ``` 
 ```sh
+cd aio-setup
+```
+```sh
+npm install
+```
+```sh
+cd ..
+```
+
+```sh
 git clone https://onsac@bitbucket.org/onsac-aio/aio-ansible.git
+```
+```sh
+cd aio-ansible
+```
+```sh
+npm install
+```
+```sh
+cd ..
 ```
 ```sh
 git clone https://onsac@bitbucket.org/onsac-aio/aio-node-logs.git
 ```
 ```sh
+cd aio-node-logs
+```
+```sh
+npm install
+```
+```sh
+cd ..
+```
+```sh
 git clone https://onsac@bitbucket.org/onsac-aio/aio-node-api.git
+```
+```sh
+cd aio-node-api
+```
+```sh
+npm install
+```
+```sh
+cd ..
 ```
 ```sh
 git clone https://onsac@bitbucket.org/onsac-aio/aio-node-snmp.git
 ```
 ```sh
+cd aio-node-snmp
+```
+```sh
+npm install
+```
+```sh
+cd ..
+```
+```sh
 git clone https://onsac@bitbucket.org/onsac-aio/aio-app.git
 ```
 ```sh
+cd aio-app
+```
+```sh
+npm install
+```
+```sh
+cd ..
+```
+```sh
 git clone https://onsac@bitbucket.org/onsac-aio/aio-api.git
+```
+```sh
+cd aio-api
+```
+```sh
+npm install
+```
+```sh
+cd ..
 ```
 ```sh
 ln -s /aio/aiop/aio-setup/.aio/aio-prd-config-geral.yml .production-aio-config-geral.yml
