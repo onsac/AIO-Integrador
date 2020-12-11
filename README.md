@@ -82,7 +82,7 @@ ping controlm
 Configuração do firewall
 
 ```sh
-firewall-cmd --zone=public --permanent --add-port 1162/tcp
+firewall-cmd --zone=public --permanent --add-port 1162/udp
 ```
 ```sh
 firewall-cmd --zone=public --permanent --add-port 8899/tcp
@@ -107,6 +107,17 @@ firewall-cmd --zone=public --permanent --add-port 27017/tcp
 ```
 ```sh
 firewall-cmd --reload
+```
+Liberação de acesso na internet para os endereços abaixo :
+
+```sh
+bitbucket.org 80 443
+```
+```sh
+atlassian.net 80 443
+```
+```sh
+smtp.gmail.com 587
 ```
 ## Cria conta no SO
 ```sh
@@ -456,6 +467,32 @@ Adicionar as respectivas permissões ao usuário
 
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible%20(7).png" alt="Tela-ansible(7)" >
+</p>
+
+Notifications no Ansible
+
+<p align="center">
+     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible%20(10).jpeg" alt="Tela-ansible(10)" >
+</p>
+
+<p align="center">
+     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela%20-ansible%20(11).jpeg" alt="Tela-ansible(11)" >
+</p>
+
+ TARGET URL : http://aio.onsac.com:8899/api/aioansible/notification
+
+ HTTP HEADERS :
+
+```sh
+{
+  "content-type": "application/json",
+  "restusername": "aiointegrador",
+  "restpassword": "U2FsdGVkX19SACLnSMhn8GP1+CIrUI9IvfCsPfL40GY="
+}
+```
+<p align="center">
+     <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible%20(12).jpeg
+" alt="Tela-ansible(12)" >
 </p>
 
 Para concluir a configuração, volte no Servidor do AIO
