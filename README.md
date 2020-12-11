@@ -79,6 +79,35 @@ ping aio-app1
 ping ansible
 ping controlm
 ```
+Configuração do firewall
+
+```sh
+firewall-cmd --zone=public --permanent --add-port 1162/tcp
+```
+```sh
+firewall-cmd --zone=public --permanent --add-port 8899/tcp
+```
+```sh
+firewall-cmd --zone=public --permanent --add-port 8080/tcp
+```
+```sh
+firewall-cmd --zone=public --permanent --add-port 8081/tcp
+```
+```sh
+firewall-cmd --zone=public --permanent --add-port 8082/tcp
+```
+```sh
+firewall-cmd --zone=public --permanent --add-port 8083/tcp
+```
+```sh
+firewall-cmd --zone=public --permanent --add-port 8084/tcp
+```
+```sh
+firewall-cmd --zone=public --permanent --add-port 27017/tcp
+```
+```sh
+firewall-cmd --reload
+```
 ## Cria conta no SO
 ```sh
 sudo useradd -d /aio -m -c "AIO Integrador" -s /bin/bash aio
