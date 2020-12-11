@@ -220,7 +220,12 @@ export NVM_DIR="$HOME/.nvm"
 ```sh
 nvm install 11
 ```
-
+```sh
+nvm alias default 11
+```
+```sh
+nvm use 11
+```
 ## Instala e Configura AIO Integrador
 
 Deploy dos componentes da solução
@@ -312,13 +317,7 @@ mkdir /var/lib/awx/projects/aio-ansible
 cd /var/lib/awx/projects/aio-ansible
 ```
 ```sh
-wget https://github.com/onsac/aio-ansible-jobs/blob/master/aio-ansible-playbook-Job_Command.yml
-```
-```sh
-wget https://github.com/onsac/aio-ansible-jobs/blob/master/aio-ansible-playbook-Job_EmbeddedScript.yml
-```
-```sh
-wget https://github.com/onsac/aio-ansible-jobs/blob/master/aio-ansible-playbook-Job_Script.yml
+scp aio@<aio.onsac.com>:/aio/aiop/aio-ansible/projects/*.yml ./
 ```
 Preparando o Ansible para integração com AIO
 
@@ -391,6 +390,9 @@ su - aio
 ```
 ```sh
 cd /aio/aiop/aio-setup
+```
+```sh
+sed -i 's/aio.onsac.com/<host integrador>/g' /aio/aiop/aio-setup/.aio/aio-prd-config-geral.yml
 ```
 ```sh
 node set_hash.js <senha do aiointegrador no ansible>
