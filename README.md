@@ -617,6 +617,7 @@ Configuração SNMP no Control-M
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2030.jpeg" >
 </p>
+
 ```sh
 Executar o comando :
 ctmipc -DEST all -MSGID CFG
