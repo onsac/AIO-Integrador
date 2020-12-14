@@ -47,5 +47,5 @@ Ou você pode editar diretamente seu arquivo:`~/.gitconfig`
         proxy = http://username:password@host:port
 ```
 
-
+<font color="green"> Some green text </font>
 
