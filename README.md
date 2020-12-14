@@ -86,7 +86,7 @@ Verifique se o Firewall está ativo, com o comando abaixo:
 ```sh
 firewall-cmd --list-all
 ```
-Se estiver execute os comandos abaixo:
+Se estiver, execute os comandos abaixo:
 
 ```sh
 firewall-cmd --zone=public --permanent --add-port 1162/udp
@@ -656,7 +656,7 @@ Selecione o agente onde foi realizado o Deploy, clicando com o botão direito.
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2011.jpeg" alt="Tela-control-m (11)" >
 </p>
 
-Para verificar a porta da API, entre no servidor do Control-M e execute o comando abaixo :
+Para verificar a porta da API do Control-M, entre no servidor do Control-M e execute o comando abaixo :
 
 ```sh
 emweb_status
