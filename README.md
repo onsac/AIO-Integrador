@@ -649,6 +649,29 @@ Selecione o agente onde foi realizado o Deploy, clicando com o botão direito.
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Control-m/Tela-Control-m%2011.jpeg" alt="Tela-control-m (11)" >
 </p>
 
+Para verificar a porta da API, entre no servidor do Control-M e execute o comando abaixo :
+
+```sh
+emweb_status
+```
+```sh
+-------------- EmwebStatus Begin ------------------
+Checking Tomcat process
+Tomcat Process [UP]
+===========================================================
+[HTTP Connectors]
+        Port: [18080], Status: [UP]
+[HTTPS Connectors]
+        Port: [8443], Status: [UP]
+===========================================================
+--> Web server [UP]
+===========================================================
+
+web server is running [ http://ctm900.onsac.com:18080/ ]
+-------------- EmwebStatus End ------------------
+```
+Verifique a porta em `[HTTPS Connectors]` e se o Status está `[UP]`
+
 Crie um profile para cada prefixo de folder seguindo o exemplo abaixo, para concluir a configuração do Plugin aioansible
 
 <p align="center">
