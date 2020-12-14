@@ -81,6 +81,13 @@ ping controlm
 ```
 Configuração do firewall
 
+Verifique se o Firewall está ativo, com o comando abaixo:
+
+```sh
+firewall-cmd --list-all
+```
+Se estiver execute os comandos abaixo:
+
 ```sh
 firewall-cmd --zone=public --permanent --add-port 1162/udp
 ```
