@@ -133,7 +133,7 @@ Notifications no Ansible
 {
   "content-type": "application/json",
   "restusername": "aiointegrador",
-  "restpassword": "U2FsdGVkX19SACLnSMhn8GP1+CIrUI9IvfCsPfL40GY="
+  "restpassword": "U2FsdGVkX18HEahvwpUCuWR29AQBe/8OTkIOVcarWuM="
 }
 ```
 <p align="center">
