@@ -28,7 +28,14 @@ A plataforma de integração que facilita a jornada de automação e redução d
 
 Deploy dos componentes da solução
 ```sh
-wget --no-cache --no-cookies -qO- https://raw.githubusercontent.com/onsac/aio-init/main/aio-init.sh | bash
+wget --no-cache --no-cookies --no-check-certificate -qO- https://raw.githubusercontent.com/onsac/aio-init/main/aio-init.sh | bash
+```
+
+Pós setup
+```sh
+sudo su - aio
+cd /aio/aiop/aio-setup
+node aio-setup
 ```
 
 ## Configura Ansible
