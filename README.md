@@ -242,10 +242,15 @@ Tomcat Process [UP]
 --> Web server [UP]
 ===========================================================
 
-web server is running [ http://ctm900.onsac.com:18080/ ]
+web server is running [ http://<em server>:18080/ ]
 -------------- EmwebStatus End ------------------
 ```
 Verifique a porta em `[HTTPS Connectors]` e se o Status está `[UP]`
+
+Verifique no browser o acesso à pagina do Control-M Automation API na URL abaixo
+```sh
+https://<em server>:8443/automation-api/swagger-ui.html
+```
 
 Crie um profile para cada prefixo de folder seguindo o exemplo abaixo, para concluir a configuração do Plugin aioansible
 
