@@ -20,9 +20,23 @@ A plataforma de integração que facilita a jornada de automação e redução d
 
 ## Procedimento de Instalação e Configuração
 
+- [Verifica e Configura PROXY](#verifica-e-configura-proxy)
 - [Instala e Configura AIO Integrador](#instala-e-configura-aio-integrador)
 - [Configura Ansible](#configura-ansible)
 - [Configura ControlM](#configura-controlm)
+
+## Verifica e Configura PROXY
+
+Se sua empresa utiliza PROXY corporativo nos servidores para permitir o acesso a internet, então é pré-requisito realizar a configuração abaixo para seguir com a instalação do AIO Integrador
+
+Deve-se editar o arquivo /etc/environment adicionando as seguintes linhas: 
+
+```sh
+http_proxy="http://USUARIO:SENHA@IP_PROXY:PORTA"
+https_proxy="http://USUARIO:SENHA@IP_PROXY:PORTA"
+ftp_proxy="http:///USUARIO:SENHA@IP_PROXY:PORTA"
+no_proxy=localhost,127.0.0.0/8,192.168.*,10.*
+```
 
 ## Instala e Configura AIO Integrador
 
