@@ -42,7 +42,7 @@ no_proxy=localhost,127.0.0.0/8,192.168.*,10.*
 
 Deploy dos componentes da solução
 ```sh
-wget --no-cache --no-cookies --no-check-certificate -qO- https://raw.githubusercontent.com/onsac/aio-init/main/aio-init.sh | bash -s <Informe a Chave>
+wget --no-cache --no-check-certificate -qO- https://raw.githubusercontent.com/onsac/aio-init/main/aio-init.sh | bash -s <Informe a Chave>
 ```
 
 Pós setup
