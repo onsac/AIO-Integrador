@@ -54,6 +54,28 @@ node aio-setup
 
 ## Configura Ansible
 
+Verifique e instale o Python, pip e plugin
+
+Para administrar seus servidores Windows, você precisará instalar os seguintes pacotes:
+
+```sh
+python-pip
+pip
+pywinrm
+```
+
+Instale os pacotes do Python.
+
+```sh
+sudo yum -y install python-pip pip
+```
+
+Instale o WinRM (Gerenciamento Remoto do Windows).
+
+```sh
+pip install pywinrm
+```
+
 Configuração dos Playbooks no <strong>Servidor Ansible Tower</strong>
 
 ```sh
@@ -65,6 +87,7 @@ cd /var/lib/awx/projects/aio-ansible
 ```sh
 scp aio@<aio.onsac.com>:/aio/aiop/aio-ansible/projects/*.yml ./
 ```
+
 Preparando o Ansible para integração com AIO
 
 Para permitir a execução nos servidores onde os JOBs são executados originalmente pelo Control-M, precisamos adicionar os hosts (nodeId) e use (runAs), o nome da credencial deve seguir o padrão (host@user)
@@ -86,6 +109,8 @@ Criar um inventário com o nome (aio-ansible)
 
 Adiocione os respectivos Hosts (nodeId) onde teremos execuções de JOBs
 
+Linux
+
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible%20(3).png" alt="Tela-ansible(3)" >
 </p>
@@ -94,6 +119,8 @@ Adiocione os respectivos Hosts (nodeId) onde teremos execuções de JOBs
 ansible_connection: ssh
 ansible_python_interpreter: '{{ ansible_playbook_python }}'
 ```
+
+Windows
 
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible%20(4).png" alt="Tela-ansible(4)" >
@@ -108,6 +135,26 @@ ansible_winrm_credssp_disable_tlsv1_2: true
 ansible_winrm_message_encryption: always
 ansible_python_interpreter: '{{ ansible_playbook_python }}'
 ```
+
+Em cada host windows será necessário liberar a porta 5985 no Firewall e executar os comandos abaixo :
+
+Um script do PowerShell está disponível para configurar automaticamente sua máquina. Este script irá configurar automaticamente o WinRM (Windows Remote Management) e abrir o firewall.
+
+Faça o download do script do PowerShell no Github.
+```sh
+https://github.com/stylersnico/ansible/blob/115aaeb17c4e13d6ef8420acd7143fddbf33ea5f/examples/scripts/ConfigureRemotingForAnsible.ps1
+```
+
+Modifique as regras de execução dos scripts do PowerShell para permitir a execução do script.
+
+Set-ExecutionPolicy RemoteSigned
+
+Execute o script.
+
+```sh
+.\ConfigureRemotingForAnsible.ps1
+```
+
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible(8).jpeg" >
 </p>
