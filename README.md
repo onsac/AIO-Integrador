@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://onsac.com/">
-    <img src="https://onsac.com/wp-content/uploads/2020/08/tl.png" alt="Bootstrap logo" width="200" height="180">
+    <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Aio2.jpg" alt="Bootstrap logo" width="200" height="180">
   </a>
 </p>
 
