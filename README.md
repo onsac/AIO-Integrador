@@ -28,7 +28,7 @@ A plataforma de integração que facilita a jornada de automação e redução d
 
 ## Requisitos de Infraestrutura
 
-Para um volume de até 1.000 transações simultâneas, considere o size abaixo:
+Para um volume de até 1.000 transações por segundo, considere o size abaixo:
 
 | Componente | Descrição |
 | --- | --- |
