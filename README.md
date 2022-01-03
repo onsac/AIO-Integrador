@@ -28,13 +28,13 @@ A plataforma de integração que facilita a jornada de automação e redução d
 
 ## Requisitos de Infraestrutura
 
-Para um volume de aproximadamente 1.000 transações simultâneas, considere o size abaixo:
+Para um volume de até 1.000 transações simultâneas, considere o size abaixo:
 
 | Componente | Descrição |
 | --- | --- |
 | SO | Centos ou Redhat |
 | CPU | 4 VCPUs |
-| Memória | 16 GB |
+| Memória Ram | 16 GB |
 | Disco | 130GB : 30GB SO + 100GB APP + DB |
 
 ## Verifica e Configura PROXY
