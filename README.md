@@ -20,10 +20,22 @@ A plataforma de integração que facilita a jornada de automação e redução d
 
 ## Procedimento de Instalação e Configuração
 
+- [Requisitos de Infraestrutura](#requisitos-de-infraestrutura)
 - [Verifica e Configura PROXY](#verifica-e-configura-proxy)
 - [Instala e Configura AIO Integrador](#instala-e-configura-aio-integrador)
 - [Configura Ansible](#configura-ansible)
 - [Configura ControlM](#configura-controlm)
+
+## Requisitos de Infraestrutura
+
+Para um volume de aproximadamente 1.000 transações simultâneas, considere o size abaixo:
+
+| Componente | Descrição |
+| --- | --- |
+| SO | Centos ou Redhat |
+| CPU | 4 VCPUs |
+| Memória | 16 GB |
+| Disco | 130GB : 30GB SO + 100GB APP + DB |
 
 ## Verifica e Configura PROXY
 
