@@ -198,7 +198,7 @@ Notifications no Ansible
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela%20-ansible%20(11).jpeg" alt="Tela-ansible(11)" >
 </p>
 
- TARGET URL : `http://aio.onsac.com:8899/api/aioansible/notification`
+ TARGET URL : `http://<aio.onsac.com>:8899/api/aioansible/notification`
 
  HTTP HEADERS :
 
