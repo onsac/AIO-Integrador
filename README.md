@@ -58,6 +58,9 @@ wget --no-cache --no-check-certificate -qO- https://raw.githubusercontent.com/on
 ```
 
 Pós setup
+
+Start AIO
+
 ```sh
 sudo su - aio
 cd /aio/aiop/aio-setup
@@ -212,6 +215,38 @@ Notifications no Ansible
 <p align="center">
      <img src="https://github.com/onsac/AIO-Integrador/blob/master/Telas-Configura%C3%A7%C3%A3o/Telas-Asible/Tela-ansible%20(12).jpeg" alt="Tela-ansible(12)" >
 </p>
+
+Configura Ansible na configuração do AIO
+
+No servidor do AIO
+
+```sh
+sudo su - aio
+```
+
+Gerar hash da senha da conta aiointegrador no Ansible
+
+```sh
+node /aio/aiop/aio-setup/set_hash.js <senha>
+```
+
+Alterar configuração
+
+```sh
+vi /aio/aiop/.production-aio-config-geral.yml
+
+:/ANSIBLE
+
+Alterar :
+
+url      : https://co8-ansible.onsac.com
+password : hash
+
+Por :
+
+url      : https://<servidor ansible>
+password : <hash> "node /aio/aiop/aio-setup/set_hash.js <senha>"
+```
 
 ## Configura ControlM
 
