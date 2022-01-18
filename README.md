@@ -44,7 +44,7 @@ Se sua empresa utiliza PROXY corporativo nos servidores para permitir o acesso a
 Deve-se editar o arquivo /etc/profile adicionando as seguintes linhas: 
 
 ```sh
-# set proxy config via profie.d - should apply for all users
+# set proxy config vi etc/profile - should apply for all users
 # 
 PROXY_URL="http://10.10.1.10:8080/"
 
