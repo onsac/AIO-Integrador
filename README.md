@@ -41,13 +41,23 @@ Para um volume de até 1.000 transações por segundo, considere a arquitetura a
 
 Se sua empresa utiliza PROXY corporativo nos servidores para permitir o acesso a internet, então é pré-requisito realizar a configuração abaixo para seguir com a instalação do AIO Integrador
 
-Deve-se editar o arquivo /etc/environment adicionando as seguintes linhas: 
+Deve-se editar o arquivo /etc/profile adicionando as seguintes linhas: 
 
 ```sh
-http_proxy="http://USUARIO:SENHA@IP_PROXY:PORTA"
-https_proxy="http://USUARIO:SENHA@IP_PROXY:PORTA"
-ftp_proxy="http:///USUARIO:SENHA@IP_PROXY:PORTA"
-no_proxy=localhost,127.0.0.0/8,192.168.*,10.*
+# set proxy config via profie.d - should apply for all users
+# 
+PROXY_URL="http://10.10.1.10:8080/"
+
+export http_proxy="$PROXY_URL"
+export https_proxy="$PROXY_URL"
+export ftp_proxy="$PROXY_URL"
+export no_proxy="127.0.0.1,localhost"
+
+# For curl
+export HTTP_PROXY="$PROXY_URL"
+export HTTPS_PROXY="$PROXY_URL"
+export FTP_PROXY="$PROXY_URL"
+export NO_PROXY="127.0.0.1,localhost"
 ```
 
 ## Instala e Configura AIO Integrador
