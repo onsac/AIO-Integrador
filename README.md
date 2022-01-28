@@ -25,7 +25,7 @@ A plataforma de integração que facilita a jornada de automação e redução d
 - [Instala e Configura AIO Integrador](#instala-e-configura-aio-integrador)
 - [Configura Ansible](#configura-ansible)
 - [Configura ControlM](#configura-controlm)
-- [Compatibilidade ControlM & Ansible](# Compatibilidade Control-M & Ansible)
+- [Compatibilidade ControlM X Ansible](#Compatibilidade-ControlMXAnsible)
 
 ## Requisitos de Infraestrutura
 
@@ -464,7 +464,7 @@ Acompanhe no Servidor do AIO
 tail -f /aio/.pm2/logs/aio-ansible-out.log
 ```
 
-## Compatibilidade Control-M & Ansible
+## Compatibilidade ControlM X Ansible
 
 Para que a conversão automática de JOBs Control-M funcione 100%, precisamos seguir alguns padrões:
 
