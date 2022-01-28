@@ -26,7 +26,7 @@ A plataforma de integração que facilita a jornada de automação e redução d
 - [Configura Ansible](#configura-ansible)
 - [Configura ControlM](#configura-controlm)
 - [Compatibilidade ControlM X Ansible](#compatibilidade-controlm-x-ansible)
-- [Integração aio-ops](#integracao-aio-ops)
+- [Integra com aio-ops](#integra-com-aio-ops)
 
 ## Requisitos de Infraestrutura
 
@@ -485,7 +485,7 @@ Para que a conversão automática de JOBs Control-M funcione 100%, precisamos se
 | Agents | Para o Ansible acessar o Servidor só necessita o cadastro do host e ter uma credencial  |
 
 
-## Integração aio-ops
+## Integra com aio-ops
 
 Configuração SNMP no Control-M
 
