@@ -25,7 +25,7 @@ A plataforma de integração que facilita a jornada de automação e redução d
 - [Instala e Configura AIO Integrador](#instala-e-configura-aio-integrador)
 - [Configura Ansible](#configura-ansible)
 - [Configura ControlM](#configura-controlm)
-- [Compatibilidade ControlM X Ansible](#Compatibilidade-ControlMXAnsible)
+- [Compatibilidade ControlM X Ansible](#compatibilidade-controlm-x-ansible)
 
 ## Requisitos de Infraestrutura
 
