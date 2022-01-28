@@ -25,6 +25,7 @@ A plataforma de integração que facilita a jornada de automação e redução d
 - [Instala e Configura AIO Integrador](#instala-e-configura-aio-integrador)
 - [Configura Ansible](#configura-ansible)
 - [Configura ControlM](#configura-controlm)
+- [Compatibilidade ControlM & Ansible](# Compatibilidade Control-M & Ansible)
 
 ## Requisitos de Infraestrutura
 
@@ -462,6 +463,27 @@ Acompanhe no Servidor do AIO
 ```sh
 tail -f /aio/.pm2/logs/aio-ansible-out.log
 ```
+
+## Compatibilidade Control-M & Ansible
+
+Para que a conversão automática de JOBs Control-M funcione 100%, precisamos seguir alguns padrões:
+
+| Padrão | Descrição |
+| --- | --- |
+| Nome do JOB | Não deve conter espaços ou -, substitua por _ |
+| Nome do JOB | Não pode ser duplicado em um mesmo fluxo |
+| Nome da Folder | Não deve conter espaços ou -, substitua por _  |
+| Tipo de JOBs | Nesta versão só comtempla o tipo de JOB SO - Unix, Linux ou Windows, ou Dummy |
+| Tipo de JOB SO | Command, Script e Embeded Script |
+| Actions | Nesta versão, o pipeline de validação, não permite que o JOB tenha actions  |
+| NodeID | Deve estar cadastrado no Ansible em hosts |  
+| Run As | A conta de execução do JOB deve estar cadastrada no Ansible em credentials  |
+| Credentials | RunAs@nodeid, Autenticação espscífica para uma conta com uma senha no Servidor  |
+| Credentials | RunAs, Autenticação espscífica para uma conta com a mesma senha para qualquer Servidor  |
+| Plugin | O plugin AIO-ANSIBLE só precisa estar em um ou dois agentes |
+| Agentes | Para o Ansible acessar o Servidor só necessita o cadastro do host e ter uma credencial  |
+
+
 ## Configura aio-app
 
 Configuração SNMP no Control-M
