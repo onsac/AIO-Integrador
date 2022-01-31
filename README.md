@@ -76,7 +76,7 @@ Start AIO
 ```sh
 sudo su - aio
 cd /aio/aiop/aio-setup
-node aio-setup
+node aio-start
 ```
 
 ## Configura Ansible
