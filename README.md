@@ -15,7 +15,7 @@
   
 ## AIO Integrador
 
-A *plataforma* de integração que facilita a jornada de automação e redução de custos da sua empresa.
+A #plataforma# de integração que facilita a jornada de automação e redução de custos da sua empresa.
 
 
 ## Procedimento de Instalação e Configuração
